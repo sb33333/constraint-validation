@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input:valid{color:blue;}
+        input:invalid{color:red;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="/echo" method="POST" id="validationForm">
+            <input name="test1" type="text" aria-describedby="test1-error">
+            <p id="test1-error"></p>
+            <input name="test2" type="text" aria-describedby="test2-error" pattern="[ㄱ-히]*">
+            <p id="test2-error"></p>
+        </form>
+    </div>
+    <button id="submitButton">submit</button>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

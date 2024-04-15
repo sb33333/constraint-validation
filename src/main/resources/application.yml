@@ -1,0 +1,16 @@
+server:
+  port: 8888
+  servlet:
+    encoding:
+      charset: UTF-8
+
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
